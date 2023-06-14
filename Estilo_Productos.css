@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 16px;  
+    height: 600px;
+    background-image: url("https://w0.peakpx.com/wallpaper/330/299/HD-wallpaper-blue-abstraction-blue-squares-background-blue-geometric-background-geometric-abstraction-creative-blue-background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.productos{
+    width: 50%;
+    max-width: 50%;
+    margin: auto;
+    background: #D6E6ED;
+    border-radius: 7px;
+    position: relative;
+    top: 200px;
+    left: 10px;
+}
+.contenedor-input{
+    text-align: center;
+}
+.titulo_form_clientes{
+    background-color: #5268B2;
+    padding: 8px;
+    text-align: center;
+    font-weight: 100px;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 10px solid crimson;
+}
+.contenedor-input{
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tabla-clientes{
+    text-align: left;
+    border: 1px solid darkgray;
+    width: 100%;
+}
+.tabla-botones{
+    text-align: center;
+    border: 1px solid darkgray;
+}
+.input-50{
+    width: 50%;
+}
+.btn-Confirmar{
+    background: #5E377C;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.btn-Confirmar{
+    transform: scale(1.05);
+}
+.btn-Regresar{
+    background: #5E377C;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.btn-Regresar{
+    transform: scale(1.05);
+}
+

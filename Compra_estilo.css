@@ -1,0 +1,58 @@
+
+/* Estilos para el formulario */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://fondosmil.com/fondo/5251.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  object-fit: cover;
+  background-position: center center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group input[type="text"] {
+  height: 40px;
+}
+
+.form-group .btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #8E196C;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-group .btn:hover {
+  background-color: #45a049;
+}

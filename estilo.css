@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'open sans', sans-serif;
+}
+.contenedor{
+    border: solid black;
+    width: 1000%;
+    max-width:1000px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 105px;
+}
+
+.cabecera img{
+    width: 100px;
+}
+
+.cabecera_h1{
+    position: absolute;
+    top: 40px;
+    left: 150px;  
+}
+
+.cabecera_frase{
+    position: absolute;
+    top: 70px;
+    left: 166px;
+}
+.nav{
+    margin: 10px 10px 0 0 ;
+    background: none;
+    height: auto;
+    border: none;
+    top: 10px;
+    left: 800px;
+}
+.nav_link_1{
+    background: #2C58F0;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+.nav_link_2{
+    background: #2C58F0;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+.nav_link_3{
+    background: #2C58F0;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+.galeria{
+    width: 97%;
+    height: 500px;
+    background: #333;
+    diplay: flex;
+    justify-content: center;
+    align-content: center; 
+    right: 200px;
+}
+.galeria_lienzo{
+    width: 900px;
+    height: 440px;
+    overflow: hidden;
+}
+.galeria_contenedor{
+    display: flex;
+    width: 700px;
+    height: 1000px;
+    transition-property: opacity, left;
+    transition-duration: 3s, 5s;
+    will-change: transform;
+}
+.elemento1:checked~.galeria_contenedor{
+    transform: translatex(0px);
+}
+.elemento2:checked~.galeria_contenedor{
+    transform: translatex(-950px);
+}
+.elemento3:checked~.galeria_contenedor{
+    transform: translatex(-1900px);
+}
+.controles{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -26px;
+}
+.label{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 300px;
+    background: green;
+    display: block;
+    cursor: pointer;
+}
+/*esto es para cambiar la posicion de los 3 cuadros si mas arriba o mas */
+.controles{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -26px;
+}
+.label{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: 100px;
+    display: block;
+    cursor: pointer; 
+}
+.tienda{
+    display: grid;
+    grid-template: repeat(3, 300px)/ repeat(3, 300px);
+    justify-content: center;
+    grid-gap: 16px;
+    width: 100%;
+    height: auto;
+}
+.tienda article{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: wrap;
+    border: solid;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.tienda ing{
+    position: relative;
+    top: 15px;
+    width: 100px;
+    border-radius: 15px;
+}
+tienda div{
+    width: 100%;
+    height: 30px;
+    background: #008B99;
+}
+.tienda div h3{
+    text-align: center;
+    color: #FFFFFF;
+}
+.tienda p{
+    font: 120% sams-serif;
+    text-align: justify;
+    padding: 15px;
+}
+/************/
+.espacio{
+    position: relative;
+    height: 20px;
+}
+.piepagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 105px;
+    background: #2C58F0;
+    align-content: center;
+}
+.piepagina footer{
+    text-align: center;
+    color: white;
+}
+/**************/
+@media screen and (max-width: 600px){
+    .tienda{
+        grid-template: repeat(3,300px) / repeat(1,300px);
+    }
+    .cabeceraabecera{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 130px;
+    }
+    .cabecera figure{
+        width: 130px;
+        margin: auto;
+    }
+    .cabecera img{
+    width: 95px;
+    height: 80px;
+    }
+    .cabecera_h1{
+        position: absolute;
+        top: 40px;
+        left: 100px;    
+    }
+    .cabecera_frase{
+        position: absolute;
+        top: 70px;
+        left: 100px;
+    }
+    .nav{
+        display: none;
+    }
+    .teclado{
+        color: white;
+    }
+}
